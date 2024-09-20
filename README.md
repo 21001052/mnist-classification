@@ -32,8 +32,8 @@ Evaluate the trained model's performance on the test set by plotting training/va
 
 ## PROGRAM
 
-### Name:THENMOZHI P
-### Register Number:212221230116
+### Name:THAMARAISELVAN V
+### Register Number:212221230115
 
 ## Program
 ```
@@ -90,12 +90,12 @@ model.compile(loss='categorical_crossentropy',
 metrics = pd.DataFrame(model.history.history)
 metrics.head()
 metrics[['accuracy','val_accuracy']].plot()
-print('212221230033 HARIDHARSHINI.S')
+print('212221230115 thamaraiselvan v')
 metrics[['loss','val_loss']].plot()
 x_test_predictions = np.argmax(model.predict(X_test_scaled), axis=1)
-print('212221230033 HARIDHARSHINI.S')
+print('212221230115 Tamaraiselvan v')
 print(confusion_matrix(y_test,x_test_predictions))
-print('212221230033 HARIDHARSHINI.S')
+print('212221230115 thamaraiselvan v')
 print(classification_report(y_test,x_test_predictions))
 
 #Prediction for a single input
@@ -111,14 +111,14 @@ x_single_prediction = np.argmax(
     model.predict(img_28_gray_scaled.reshape(1,28,28,1)),
      axis=1)
 print(x_single_prediction)
-print('212221230033 THENMOZHI P')
+print('212221230115 thamarraiselvan V')
 plt.imshow(img_28_gray_scaled.reshape(28,28),cmap='gray')
 img_28_gray_inverted = 255.0-img_28_gray
 img_28_gray_inverted_scaled = img_28_gray_inverted.numpy()/255.0
 x_single_prediction = np.argmax(
     model.predict(img_28_gray_inverted_scaled.reshape(1,28,28,1)),
      axis=1)
-print('212221230033 HARIDHARSHINI.S')
+print('212221230115 thamaraiselvan v')
 print(x_single_prediction)
 ```
 
